@@ -10,6 +10,7 @@ const FriendsList = props => {
     return (
         <div>
             <h1>Friends List</h1>
+            <button onClick={() => props.dispatch(getFriendsList())}>Refresh List</button>
             <ul>
                 {props.friends.map(friend => {
                     return (
